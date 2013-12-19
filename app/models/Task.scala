@@ -43,3 +43,37 @@ object Task {
     }
   }
 }
+
+
+//scala> import com.typesafe.plugin._
+//import com.typesafe.plugin._
+//
+//scala> val mail = use[MailerPlugin].email
+//mail: com.typesafe.plugin.MailerAPI = com.typesafe.plugin.CommonsMailer@1b46116b
+//
+//scala> mail.setSubject("mailer")
+//res3: com.typesafe.plugin.MailerAPI = com.typesafe.plugin.CommonsMailer@1b46116b
+//
+//scala> mail.setRecipient("jack.dempsey@email.com")
+//<console>:18: error: value setRecipient is not a member of com.typesafe.plugin.MailerAPI
+//mail.setRecipient("jack.dempsey@email.com")
+//^
+//
+//scala> help
+//<console>:17: error: not found: value help
+//help
+//^
+//
+//scala> mail.addFrom("jack@freelancing.io")
+//res6: com.typesafe.plugin.MailerAPI = com.typesafe.plugin.CommonsMailer@1b46116b
+//
+//scala> mail.addTo("jack.dempsey@gmail.com")
+//<console>:18: error: value addTo is not a member of com.typesafe.plugin.MailerAPI
+//mail.addTo("jack.dempsey@gmail.com")
+//^
+//
+//scala> mail.addRecipient("jack.dempsey@gmail.com")
+//res8: com.typesafe.plugin.MailerAPI = com.typesafe.plugin.CommonsMailer@1b46116b
+//
+//scala> mail.sendHtml("<html>html</html>" )
+
